@@ -5,11 +5,11 @@
 class VpUtils < Formula
   desc "Vojtech Pastyrik Utils"
   homepage "https://github.com/VojtechPastyrik/vp-utils"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/VojtechPastyrik/vp-utils/releases/download/v0.1.0/vp-utils_0.1.0_darwin_all.tar.gz"
-    sha256 "092ce7b084f426ab5e98524ff1c2e6a041f384c7b90001a79a8f85b93c240d19"
+    url "https://github.com/VojtechPastyrik/vp-utils/releases/download/v0.2.0/vp-utils_0.2.0_darwin_all.tar.gz"
+    sha256 "dc5517639751c0982ad168b195d66d36ae381aa9cbdca19f1b2fe833edec98e0"
 
     def install
       bin.install "vp-utils"
@@ -18,15 +18,15 @@ class VpUtils < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/VojtechPastyrik/vp-utils/releases/download/v0.1.0/vp-utils_0.1.0_linux_amd64.tar.gz"
-      sha256 "533a534b53813c836071c6ec0526b0c0652105ed752fa5ac512e658ae6712703"
+      url "https://github.com/VojtechPastyrik/vp-utils/releases/download/v0.2.0/vp-utils_0.2.0_linux_amd64.tar.gz"
+      sha256 "cc90a499709ff3b4b0fa5e33b3657a73eea4e408ac008267788c0665c9075200"
       def install
         bin.install "vp-utils"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/VojtechPastyrik/vp-utils/releases/download/v0.1.0/vp-utils_0.1.0_linux_arm64.tar.gz"
-      sha256 "f605fad3464d49473e25fae51fd329a04f925b8544b845eaaaf592323a01a91a"
+      url "https://github.com/VojtechPastyrik/vp-utils/releases/download/v0.2.0/vp-utils_0.2.0_linux_arm64.tar.gz"
+      sha256 "346e6a07c835750c436e82a3e1983a1a560636e34490dc8d1fe2f1ea15df344b"
       def install
         bin.install "vp-utils"
       end
