@@ -5,11 +5,11 @@
 class Vpd < Formula
   desc "Vojtech Pastyrik Utils"
   homepage "https://github.com/VojtechPastyrik/vpd"
-  version "1.0.0"
+  version "1.1.0"
 
   on_macos do
-    url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.0.0/vpd_1.0.0_darwin_all.tar.gz"
-    sha256 "7bdeb3041edf86f8cf4a297216df5f6ebc5f2a3e6443cdf5772ff702e3b2b89d"
+    url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.1.0/vpd_1.1.0_darwin_all.tar.gz"
+    sha256 "317d471276bf322b8e1a399db3348c004564d9c75b47d67b458a4f095044c84e"
 
     def install
       bin.install "vpd"
@@ -18,15 +18,15 @@ class Vpd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.0.0/vpd_1.0.0_linux_amd64.tar.gz"
-      sha256 "8b8864bc58980e9e7f7dce13af753a1842214bded92c3337cafc9a5e057559b5"
+      url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.1.0/vpd_1.1.0_linux_amd64.tar.gz"
+      sha256 "72b86600af74cab8b5a5f29a99599c3efdcca36b43521a0f2f1aef54450a5fdc"
       def install
         bin.install "vpd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.0.0/vpd_1.0.0_linux_arm64.tar.gz"
-      sha256 "d7f4bc2274b635a839ace5cc7e3723a1cb87c2b9e4b3537df571421e275d6702"
+      url "https://github.com/VojtechPastyrik/vpd/releases/download/v1.1.0/vpd_1.1.0_linux_arm64.tar.gz"
+      sha256 "6fdc3041169099e23c9b7f91ddba0b9f22cba9e257f738e64ae1121171dc51e2"
       def install
         bin.install "vpd"
       end
