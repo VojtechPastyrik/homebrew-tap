@@ -3,7 +3,7 @@ cask "vpd" do
   name "vpd"
   desc "Vojtech Pastyrik Utils"
   homepage "https://github.com/VojtechPastyrik/vpd"
-  version "1.2.0"
+  version "1.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,17 +13,17 @@ cask "vpd" do
 
   on_macos do
     url "https://github.com/VojtechPastyrik/vpd/releases/download/v#{version}/vpd_#{version}_darwin_all.tar.gz"
-    sha256 "9fb5542f07c8f6211f5c4ee56b32df1c8be76adc1bb1ce1def6483de5f0624c2"
+    sha256 "31428a24721da5bc49fea49f91ffffe6301c7e51a178da0fd7e64bfe22096bb8"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/VojtechPastyrik/vpd/releases/download/v#{version}/vpd_#{version}_linux_amd64.tar.gz"
-      sha256 "c714c9ac1bd3fc26ad62c13903ff873d09ca2cb88df9dd2ef6faaa627357a81c"
+      sha256 "e73e0b889f697498f71ac6062bc52de55954aad2a3c7d1dacb206083442b275a"
     end
     on_arm do
       url "https://github.com/VojtechPastyrik/vpd/releases/download/v#{version}/vpd_#{version}_linux_arm64.tar.gz"
-      sha256 "6c09a41f02179cf810f7f94b1b256ef5c6604ff084a097524c1b6ede8e3ea1b7"
+      sha256 "5baa3b41748a10bf2304e2be3069d26ca88ef547bd9af21dc63a82c6cae838da"
     end
   end
 
